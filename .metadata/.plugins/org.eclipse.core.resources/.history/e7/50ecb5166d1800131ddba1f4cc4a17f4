@@ -1,0 +1,62 @@
+import java.awt.EventQueue;
+
+import javax.swing.JFrame;
+import javax.swing.JPanel;
+import java.awt.BorderLayout;
+import javax.swing.SpringLayout;
+import javax.swing.JLabel;
+
+
+public class Player {
+
+	private JFrame frame;
+	
+
+	/**
+	 * Launch the application.
+	 */
+	public static void main(String[] args) {
+		EventQueue.invokeLater(new Runnable() {
+			public void run() {
+				try {
+					Player window = new Player();
+					window.frame.setVisible(true);
+					MP3 mp3song = new MP3("W:\\Git Repositories\\multimedia\\Resources\\test270.mp3");
+					mp3song.play();
+					Thread.sleep(10000);
+					System.out.println("done");
+					
+				} catch (Exception e) {
+					e.printStackTrace();
+				}
+			}
+		});
+	}
+
+	/**
+	 * Create the application.
+	 */
+	public Player() {
+		initialize();
+		
+	}
+
+	/**
+	 * Initialize the contents of the frame.
+	 */
+	private void initialize() {
+		frame = new JFrame();
+		frame.setBounds(100, 100, 450, 300);
+		frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
+		
+		JPanel panel = new JPanel();
+		frame.getContentPane().add(panel, BorderLayout.CENTER);
+		SpringLayout sl_panel = new SpringLayout();
+		panel.setLayout(sl_panel);
+		
+		JLabel lblsongName = new JLabel("/song name");
+		sl_panel.putConstraint(SpringLayout.NORTH, lblsongName, 10, SpringLayout.NORTH, panel);
+		sl_panel.putConstraint(SpringLayout.WEST, lblsongName, 10, SpringLayout.WEST, panel);
+		panel.add(lblsongName);
+	}
+}
