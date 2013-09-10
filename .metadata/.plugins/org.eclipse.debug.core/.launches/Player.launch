@@ -8,6 +8,10 @@
 </listAttribute>
 <booleanAttribute key="org.eclipse.jdt.launching.ATTR_USE_START_ON_FIRST_THREAD" value="true"/>
 <stringAttribute key="org.eclipse.jdt.launching.MAIN_TYPE" value="Player"/>
+<<<<<<< HEAD
 <stringAttribute key="org.eclipse.jdt.launching.PROGRAM_ARGUMENTS" value="&quot;/Users/naveeshbajpai/UniRad/multimedia/Resources/test270.mp3&quot;"/>
+=======
+<stringAttribute key="org.eclipse.jdt.launching.PROGRAM_ARGUMENTS" value="&quot;W:\\Git Repositories\\multimedia\\Resources\\test270.mp3&quot;"/>
+>>>>>>> d609a8f692f07124a4f7f24ebc15d6f391ebae8f
 <stringAttribute key="org.eclipse.jdt.launching.PROJECT_ATTR" value="Unirad"/>
 </launchConfiguration>
