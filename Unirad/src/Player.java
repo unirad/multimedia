@@ -29,8 +29,8 @@ public class Player {
 			public void run() {
 				try {
 					Player window = new Player();
-					MP3 mp3song = new MP3("W:\\Git Repositories\\multimedia\\Resources\\test270.mp3");
-					Mp3Info info = new Mp3Info("W:\\Git Repositories\\multimedia\\Resources\\test270.mp3");
+					MP3 mp3song = new MP3("/Users/naveeshbajpai/UniRad/multimedia/Resources/test270.mp3");
+					Mp3Info info = new Mp3Info("/Users/naveeshbajpai/UniRad/multimedia/Resources/test270.mp3");
 					window.lblsongName.setText(info.getTitle());
 					window.lblCurrPos.setText("0:00");
 					window.lblduration.setText(info.getDuration().getHumanReadableForm());
